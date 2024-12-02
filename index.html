@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <style>
+    .loaded {
+      opacity: 1
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20241202171408">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20241202171408" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.min.css?_v=20241202171408">
+  <title>Главная</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+  <div class="header__container">
+    <a href="#" class="header__logo logo">
+      КОФЕЙНЫЙ МИР
+      <span>LLC COFFEE MIR COMPANY</span>
+    </a>
+    <nav class="header__menu menu">
+  <ul class="menu__list">
+    <li class="menu__item"><a href="#" class="menu__link">Каталог</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Лизинг</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Сервис</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+  </ul>
+</nav>
+    <div class="header__right">
+      <button class="btn header__btn">Связаться</button>
+      <button class="header__burger icon-menu">
+  <span></span>
+</button>
+    </div>
+  </div>
+</header>
+<div class="header__overlay">
+  <div class="overlay__container">
+    <nav class="header__menu menu">
+  <ul class="menu__list">
+    <li class="menu__item"><a href="#" class="menu__link">Каталог</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Лизинг</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Сервис</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+  </ul>
+</nav>
+    <button class="btn header__btn">Связаться</button>
+  </div>
+</div>
+
+    <main class="page">
+      <section class="hero">
+        <div class="hero__container">
+          <h1 class="hero__headline">
+            Добро пожаловать <br>
+            в «Кофейный мир»
+          </h1>
+          <p class="hero__text">
+            Официальные партнеры:
+          </p>
+          <div class="hero__partners">
+            <div class="hero__partner">
+              <picture><source srcset="./images/partner-1.webp" type="image/webp"><img class="hero__partner-img" src="./images/partner-1.png" alt="Партнер"></picture>
+            </div>
+            <div class="hero__partner">
+              <picture><source srcset="./images/partner-2.webp" type="image/webp"><img class="hero__partner-img" src="./images/partner-2.png" alt="Партнер"></picture>
+            </div>
+            <div class="hero__partner">
+              <picture><source srcset="./images/partner-3.webp" type="image/webp"><img class="hero__partner-img" src="./images/partner-3.png" alt="Партнер"></picture>
+            </div>
+          </div>
+          <a href="#catalog" class="btn hero__btn">Перейти в каталог</a>
+          <div class="hero__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image: url(../images/hero-bg.png);"></div>
+              <div class="swiper-slide" style="background-image: url(../images/hero-bg-2.png);"></div>
+              <div class="swiper-slide" style="background-image: url(../images/hero-bg-3.png);"></div>
+            </div>
+          </div>
+          <div class="hero__pagination swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="catalog">
+        <div class="catalog__container">
+          <h2 class="catalog__headline">Профессиональное оборудование</h2>
+          <div class="catalog__list">
+            <div class="catalog__item">
+              <div class="catalog__title">Автоматические
+                кофемашины</div>
+              <picture><source srcset="./images/catalog-1.webp" type="image/webp"><img src="./images/catalog-1.png" alt="" class="catalog__img"></picture>
+            </div>
+            <div class="catalog__item">
+              <div class="catalog__title">Профессиональные кофемашины</div>
+              <picture><source srcset="./images/catalog-2.webp" type="image/webp"><img src="./images/catalog-2.png" alt="" class="catalog__img"></picture>
+            </div>
+            <div class="catalog__item">
+              <div class="catalog__title">Холодильники</div>
+              <picture><source srcset="./images/catalog-3.webp" type="image/webp"><img src="./images/catalog-3.png" alt="" class="catalog__img"></picture>
+            </div>
+            <div class="catalog__item">
+              <div class="catalog__title">Кофейные аппараты</div>
+              <picture><source srcset="./images/catalog-4.webp" type="image/webp"><img src="./images/catalog-4.png" alt="" class="catalog__img"></picture>
+            </div>
+            <div class="catalog__item">
+              <div class="catalog__title">Телеметрия</div>
+              <picture><source srcset="./images/catalog-5.webp" type="image/webp"><img src="./images/catalog-5.png" alt="" class="catalog__img"></picture>
+            </div>
+            <div class="catalog__item">
+              <div class="catalog__title">Кофемолки</div>
+              <picture><source srcset="./images/catalog-6.webp" type="image/webp"><img src="./images/catalog-6.png" alt="" class="catalog__img"></picture>
+            </div>
+            <div class="catalog__item">
+              <div class="catalog__title">Аксессуары</div>
+              <picture><source srcset="./images/catalog-7.webp" type="image/webp"><img src="./images/catalog-7.png" alt="" class="catalog__img"></picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="offer">
+        <div class="offer__container">
+          <h2 class="offer__headline">Комплексные предложения</h2>
+
+          <div class="offer__list">
+            <div class="offer__item">
+              <picture><source srcset="./images/offer-1.webp" type="image/webp"><img src="./images/offer-1.png" alt="" class="offer__img"></picture>
+              <h3 class="offer__title">Стойки
+                для кофепоинтов</h3>
+              <p class="offer__desc">Мы предлагаем широкий ассортимент качественного кофейного оборудования для кофеен и
+                кофепоинто.</p>
+            </div>
+            <div class="offer__item">
+              <picture><source srcset="./images/offer-2.webp" type="image/webp"><img src="./images/offer-2.png" alt="" class="offer__img"></picture>
+              <h3 class="offer__title">Платежные терминалы
+                и телеметрия</h3>
+              <p class="offer__desc">Мы предлагаем широкий ассортимент качественного кофейного оборудования для кофеен и
+                кофепоинто.</p>
+            </div>
+            <div class="offer__item">
+              <picture><source srcset="./images/offer-3.webp" type="image/webp"><img src="./images/offer-3.png" alt="" class="offer__img"></picture>
+              <h3 class="offer__title">Дополнительные товары: химия, кофе сиропы</h3>
+              <p class="offer__desc">Отельное решение для вашего комфорта: продажа высококачественного кофейного
+                оборудования для отелей.</p>
+            </div>
+            <div class="offer__item">
+              <picture><source srcset="./images/offer-4.webp" type="image/webp"><img src="./images/offer-4.png" alt="" class="offer__img"></picture>
+              <h3 class="offer__title">Представительство
+                в вашем городе</h3>
+              <p class="offer__desc">Предлагаем качественное кофейное оборудование для сервисных компаний: кофемашины,
+                кофемолки, аксессуары.</p>
+            </div>
+
+          </div>
+      </div></section>
+      <section class="service">
+        <div class="service__container">
+          <h2 class="service__headline">Сервис для клиентов</h2>
+          @include('html/tabsExample.html')
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+  <div class="footer__container">
+    
+  </div>
+</footer>
+  </div>
+
+  <div class="popup" data-popup="popup-1" data-close-overlay>
+    <div class="popup__wrapper" data-close-overlay>
+        <div class="popup__content">
+            <button class="button-close popup__close" type="button">x</button>
+            <div class="popup__body">
+                <h2>Базовый пример модального окна</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241202171408"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20241202171408"></script>
+<script>
+  AOS.init({
+    once: true
+  });
+</script>
+<script src="js/app.min.js?_v=20241202171408"></script>
+</body>
+
+</html>
