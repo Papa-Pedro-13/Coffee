@@ -9,11 +9,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20241202172840">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20241202172840" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20241202173341">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20241202173341" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.min.css?_v=20241202172840">
+  <link rel="stylesheet" href="css/style.min.css?_v=20241202173341">
   <title>Главная</title>
 </head>
 
@@ -163,7 +162,49 @@
       <section class="service">
         <div class="service__container">
           <h2 class="service__headline">Сервис для клиентов</h2>
-          @include('html/tabsExample.html')
+          <div class="tabs" data-tabs="tabs-example">
+    <div class="tabs__nav">
+        <button class="tabs__trigger" type="button">Обучение сотрудников</button>
+        <button class="tabs__trigger" type="button">Установка и настройка</button>
+        <button class="tabs__trigger" type="button">Диагностика и ремонт</button>
+        <button class="tabs__trigger" type="button">Подбор оборудования</button>
+    </div>
+
+    <div class="tabs__content">
+        <div class="tabs__panel">
+            <picture><source srcset="./images/tabs-1.webp" type="image/webp"><img src="./images/tabs-1.png" alt="" class="tabs__img"></picture>
+            <h3 class="tabs__title">Обучение сотрудников</h3>
+            <p class="tabs__desc">
+                Предоставляем услуги диагностики и ремонта кофейного оборудования, обеспечивая надёжность
+                и долговечность вашей техники.
+            </p>
+        </div>
+        <div class="tabs__panel">
+            <picture><source srcset="./images/tabs-1.webp" type="image/webp"><img src="./images/tabs-1.png" alt="" class="tabs__img"></picture>
+            <h3 class="tabs__title">Установка и настройка</h3>
+            <p class="tabs__desc">
+                Установка и настройка кофейного оборудования. Мы работаем с разными типами кофейного
+                оборудования, наша команда может помочь вам в установке и настройке вашего оборудования.
+            </p>
+        </div>
+        <div class="tabs__panel">
+            <picture><source srcset="./images/tabs-1.webp" type="image/webp"><img src="./images/tabs-1.png" alt="" class="tabs__img"></picture>
+            <h3 class="tabs__title">Диагностика и ремонт</h3>
+            <p class="tabs__desc">
+                Диагностика и ремонт кофейного оборудования. Мы предлагаем услуги по диагностике и ремонту
+                кофейного оборудования, чтобы помочь вам вернуть вашу технику в работу.
+            </p>
+        </div>
+        <div class="tabs__panel">
+            <picture><source srcset="./images/tabs-1.webp" type="image/webp"><img src="./images/tabs-1.png" alt="" class="tabs__img"></picture>
+            <h3 class="tabs__title">Подбор оборудования</h3>
+            <p class="tabs__desc">
+                Подбор оборудования. Мы поможем вам выбрать подходящее оборудование для вашего бизнеса.
+            </p>
+        </div>
+
+    </div>
+</div>
         </div>
       </section>
     </main>
@@ -186,14 +227,14 @@
     </div>
 </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241202172840"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20241202172840"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241202173341"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20241202173341"></script>
 <script>
   AOS.init({
     once: true
   });
 </script>
-<script src="js/app.min.js?_v=20241202172840"></script>
+<script src="js/app.min.js?_v=20241202173341"></script>
 </body>
 
 </html>
