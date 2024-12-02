@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Главная'
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/header.html')
+
+    <main class="page">
+      <section class="hero">
+        <div class="hero__container">
+          <h1 class="hero__headline">
+            Добро пожаловать <br>
+            в «Кофейный мир»
+          </h1>
+          <p class="hero__text">
+            Официальные партнеры:
+          </p>
+          <div class="hero__partners">
+            <div class="hero__partner">
+              <img class='hero__partner-img' src="./images/partner-1.png" alt="Партнер">
+            </div>
+            <div class="hero__partner">
+              <img class='hero__partner-img' src="./images/partner-2.png" alt="Партнер">
+            </div>
+            <div class="hero__partner">
+              <img class='hero__partner-img' src="./images/partner-3.png" alt="Партнер">
+            </div>
+          </div>
+          <a href="#catalog" class="hero__btn btn">Перейти в каталог</a>
+          <div class="swiper hero__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style='background-image: url(../images/hero-bg.png);'></div>
+              <div class="swiper-slide" style='background-image: url(../images/hero-bg-2.png);'></div>
+              <div class="swiper-slide" style='background-image: url(../images/hero-bg-3.png);'></div>
+            </div>
+          </div>
+          <div class="hero__pagination swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="catalog">
+        <div class="catalog__container">
+          <h2 class="catalog__headline">Профессиональное оборудование</h2>
+          <div class="catalog__list">
+            <div class="catalog__item">
+              <div class="catalog__title">Автоматические
+                кофемашины</div>
+              <img src="./images/catalog-1.png" alt="" class="catalog__img">
+            </div>
+            <div class="catalog__item">
+              <div class="catalog__title">Профессиональные кофемашины</div>
+              <img src="./images/catalog-2.png" alt="" class="catalog__img">
+            </div>
+            <div class="catalog__item">
+              <div class="catalog__title">Холодильники</div>
+              <img src="./images/catalog-3.png" alt="" class="catalog__img">
+            </div>
+            <div class="catalog__item">
+              <div class="catalog__title">Кофейные аппараты</div>
+              <img src="./images/catalog-4.png" alt="" class="catalog__img">
+            </div>
+            <div class="catalog__item">
+              <div class="catalog__title">Телеметрия</div>
+              <img src="./images/catalog-5.png" alt="" class="catalog__img">
+            </div>
+            <div class="catalog__item">
+              <div class="catalog__title">Кофемолки</div>
+              <img src="./images/catalog-6.png" alt="" class="catalog__img">
+            </div>
+            <div class="catalog__item">
+              <div class="catalog__title">Аксессуары</div>
+              <img src="./images/catalog-7.png" alt="" class="catalog__img">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='offer'>
+        <div class="offer__container">
+          <h2 class="offer__headline">Комплексные предложения</h2>
+
+          <div class="offer__list">
+            <div class="offer__item">
+              <img src="./images/offer-1.png" alt="" class="offer__img">
+              <h3 class="offer__title">Стойки
+                для кофепоинтов</h3>
+              <p class="offer__desc">Мы предлагаем широкий ассортимент качественного кофейного оборудования для кофеен и
+                кофепоинто.</p>
+            </div>
+            <div class="offer__item">
+              <img src="./images/offer-2.png" alt="" class="offer__img">
+              <h3 class="offer__title">Платежные терминалы
+                и телеметрия</h3>
+              <p class="offer__desc">Мы предлагаем широкий ассортимент качественного кофейного оборудования для кофеен и
+                кофепоинто.</p>
+            </div>
+            <div class="offer__item">
+              <img src="./images/offer-3.png" alt="" class="offer__img">
+              <h3 class="offer__title">Дополнительные товары: химия, кофе сиропы</h3>
+              <p class="offer__desc">Отельное решение для вашего комфорта: продажа высококачественного кофейного
+                оборудования для отелей.</p>
+            </div>
+            <div class="offer__item">
+              <img src="./images/offer-4.png" alt="" class="offer__img">
+              <h3 class="offer__title">Представительство
+                в вашем городе</h3>
+              <p class="offer__desc">Предлагаем качественное кофейное оборудование для сервисных компаний: кофемашины,
+                кофемолки, аксессуары.</p>
+            </div>
+
+          </div>
+      </section>
+      <section class="service">
+        <div class="service__container">
+          <h2 class="service__headline">Сервис для клиентов</h2>
+          @include('html/tabsExample.html')
+        </div>
+      </section>
+    </main>
+
+    @@include('html/footer.html')
+  </div>
+
+  @@include('html/popupExample.html')
+  @@include('html/script.html')
+</body>
+
+</html>
